@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6eee8">
+<title>Cherry — Nuestro primer año</title>
+<style>
+:root{--cream:#f7f0e9;--paper:#fffaf6;--rose:#b77e7b;--ink:#57413e;--muted:#927874;--gold:#b89a6a}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+.hero{min-height:82vh;display:grid;place-items:center;text-align:center;padding:52px 22px;background:linear-gradient(180deg,rgba(40,24,23,.12),rgba(40,24,23,.58)),url('fotos/10-nuestra-boda.jpeg') center 35%/cover;color:white}
+.hero-inner{max-width:650px;text-shadow:0 2px 20px #38252288}.kicker{letter-spacing:.25em;text-transform:uppercase;font:11px Arial,sans-serif}
+h1{font-size:clamp(48px,10vw,88px);font-weight:400;font-style:italic;margin:18px 0 8px}.hero p{font-size:clamp(17px,3vw,22px);line-height:1.6;margin:12px auto;max-width:520px}
+.rule{width:70px;height:1px;background:var(--gold);margin:25px auto}
+main{max-width:1050px;margin:auto;padding:58px 20px}.section-head{text-align:center;margin-bottom:34px}
+.section-head .kicker{color:var(--rose)}h2{font-size:clamp(32px,6vw,48px);font-weight:400;font-style:italic;margin:12px 0;color:var(--ink)}
+.intro{color:var(--muted);line-height:1.7;max-width:580px;margin:0 auto}
+.gallery{columns:3 230px;column-gap:22px}.photo{display:inline-block;width:100%;margin:0 0 22px;padding:10px 10px 16px;background:var(--paper);box-shadow:0 8px 24px #71544b14;break-inside:avoid;transform:rotate(var(--tilt,0deg))}
+.photo:nth-child(3n+1){--tilt:-.7deg}.photo:nth-child(3n+2){--tilt:.6deg}.photo img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover}
+.photo figcaption{text-align:center;color:var(--muted);font-style:italic;font-size:15px;line-height:1.45;padding:13px 6px 2px}
+.letter{max-width:720px;margin:78px auto 30px;background:var(--paper);padding:clamp(25px,6vw,55px);box-shadow:0 10px 35px #71544b12;text-align:center;line-height:1.9}
+.letter h2{margin-top:0}.letter p{color:#715b56;font-size:17px}.letter .sign{margin-top:28px}
+.song{text-align:center;padding:52px 20px 60px;background:#eee1dc}.song a{display:inline-block;margin-top:18px;padding:13px 24px;border:1px solid var(--rose);border-radius:30px;color:#76514e;text-decoration:none;font:14px Arial,sans-serif}
+.anniversary{text-align:center;padding:62px 20px 68px;background:#f8eee9}.anniversary h2{font-size:clamp(30px,6vw,44px)}.anniversary p{color:#805e59;font-size:clamp(18px,3vw,22px);font-style:italic;line-height:1.6}
+footer{text-align:center;padding:28px 15px 44px;color:var(--muted);font-style:italic}.heart{color:var(--rose)}
+@media(max-width:600px){.hero{min-height:72vh}.gallery{columns:2 145px;column-gap:12px}.photo{padding:7px 7px 12px;margin-bottom:13px}.photo figcaption{font-size:13px}}
+
+.gift-gate{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:24px;background:linear-gradient(145deg,#f8eee8,#ead8d1);text-align:center}
+.gift-card{max-width:440px;width:100%;padding:42px 28px;background:#fffaf6;border:1px solid #ead8d6;box-shadow:0 18px 55px #71544b20}
+.gift-card .heart{font-size:30px;color:#b77e7b}
+.gift-card h1{font-size:54px;color:#80534e;font-style:italic;font-weight:400;margin:12px 0}
+.gift-card p{color:#927874;line-height:1.7}
+.gift-button{margin-top:18px;padding:15px 27px;border:0;border-radius:30px;background:#a97875;color:#fffaf6;font:15px Georgia,serif;cursor:pointer;box-shadow:0 6px 18px #a9787538}
+body.locked{overflow:hidden}body.locked #site-content{visibility:hidden}
+#music-player{position:fixed;width:1px;height:1px;left:-10px;top:-10px;opacity:.01;pointer-events:none}
+
+</style></head>
+<body><body class="locked">
+
+<div class="gift-gate" id="gift-gate">
+ <div class="gift-card">
+  <div class="heart">♡</div>
+  <div class="kicker">Un regalo para ti</div>
+  <h1>Cherry</h1>
+  <div class="rule"></div>
+  <p>Preparé este pequeño rincón con nuestros recuerdos y todo mi cariño.</p>
+  <button class="gift-button" id="open-gift">Abrir mi regalo ♥</button>
+  <p style="font-size:12px;margin-top:18px">Con amor, Heiter</p>
+ </div>
+</div>
+<div id="site-content">
+
+<div id="music-player" aria-hidden="true">
+ <iframe id="song-frame" title="Until I Found You — Stephen Sanchez y Em Beihold"
+  width="1" height="1" src="about:blank"
+  allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+</div>
+
+<header class="hero"><div class="hero-inner">
+<div class="kicker">A little place for us</div><h1>Cherry</h1><div class="rule"></div>
+<p>Cada día contigo es mi recuerdo favorito.</p><div class="kicker">Heiter Sequeira&nbsp; ♡</div>
+</div></header>
+<main>
+<div class="section-head"><div class="kicker">Un año de nosotros</div><h2>Nuestros recuerdos</h2>
+<p class="intro">Un año de momentos, sonrisas y aventuras. Cada fotografía guarda un pedacito de nuestra historia.</p></div>
+<section class="gallery" aria-label="Galería de fotografías"><figure class="photo"><img src="fotos/01-videollamada.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>Hasta en los momentos sencillos, encuentro razones para sonreír.</figcaption></figure>
+<figure class="photo"><img src="fotos/02-playa-juntos.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>Un día bonito, contigo aún más bonito.</figcaption></figure>
+<figure class="photo"><img src="fotos/03-dia-tropical.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>Coleccionando lugares y momentos a tu lado.</figcaption></figure>
+<figure class="photo"><img src="fotos/04-nuestro-beso.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>De esos instantes que quisiera guardar para siempre.</figcaption></figure>
+<figure class="photo"><img src="fotos/05-atardecer-juntos.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>El paisaje era hermoso, pero mi parte favorita eras tú.</figcaption></figure>
+<figure class="photo"><img src="fotos/06-aventura-en-la-playa.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>Otra aventura que ahora vive en nuestros recuerdos.</figcaption></figure>
+<figure class="photo"><img src="fotos/07-un-dia-juntos.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>Tu sonrisa siempre encuentra la manera de alegrarme el día.</figcaption></figure>
+<figure class="photo"><img src="fotos/08-recuerdo-en-la-playa.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>Pequeños momentos que significan muchísimo.</figcaption></figure>
+<figure class="photo"><img src="fotos/09-sonrisas-juntos.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>De mis recuerdos favoritos: nosotros, siendo nosotros.</figcaption></figure>
+<figure class="photo"><img src="fotos/10-nuestra-boda.jpeg" alt="Recuerdo de Heiter y Cherry" loading="lazy"><figcaption>Y entre todos nuestros recuerdos, este ocupa un lugar especial.</figcaption></figure></section>
+<section class="letter">
+<div class="kicker">Nuestro primer aniversario</div><h2>Para mi Cherry bella</h2>
+<p>Hoy cumplimos nuestro primer año juntos y no quería dejar pasar este día sin recordarte lo especial que eres para mí.</p>
+<p>Hace un año comenzó una historia que hoy significa muchísimo en mi vida. Y si hay algo que tengo claro, es que cada momento a tu lado ha valido la pena. Hemos compartido sonrisas, aventuras, abrazos, momentos inolvidables y también días que nos han enseñado a conocernos y crecer juntos.</p>
+<p>Quiero agradecerte por ser mi compañera, por tu cariño, por tu manera de hacer especiales hasta los días más sencillos y por permitirme compartir contigo esta hermosa aventura que llamamos amor.</p>
+<p>Mi niña, quizás no siempre encuentre las palabras perfectas para expresar lo que siento, pero quiero que nunca dudes de lo importante que eres para mí. Me encanta tenerte en mi vida, mirarte, abrazarte y saber que, entre tantas personas en este mundo, tengo la fortuna de compartir mi camino contigo.</p>
+<p>Hoy no solamente celebro nuestro primer año. Celebro haberte encontrado, cada recuerdo que hemos construido y todos esos momentos que todavía nos esperan.</p>
+<p>Deseo que este sea solamente el primero de muchísimos aniversarios, nuevas aventuras, sueños cumplidos y razones para seguir eligiéndonos.</p>
+<p><em>Y si tuviera que volver a comenzar, volvería a buscarte, volvería a enamorarme de ti y volvería a elegirte.</em></p>
+<p class="sign"><strong>Feliz primer aniversario, mi Cherry bella.</strong><br>Te amo más de lo que muchas veces puedo explicar.<br><br>Con todo mi amor,<br><strong>Heiter Sequeira</strong> <span class="heart">♥</span></p>
+</section></main>
+<section class="song"><div class="kicker">Nuestra canción</div><h2>Until I Found You</h2>
+<p class="intro">Stephen Sanchez &amp; Em Beihold</p>
+<a href="https://www.youtube.com/results?search_query=Stephen+Sanchez+Until+I+Found+You+Em+Beihold" target="_blank" rel="noopener">Escuchar nuestra canción ♫</a>
+</section>
+<section class="anniversary"><div class="kicker">Heiter &amp; Cherry</div>
+<h2>One year, forever to go. ♡</h2>
+<p>Un año contigo,<br>y toda una vida por descubrir.</p><div class="rule"></div><div class="kicker">Con amor, siempre</div>
+</section>
+<footer>Hecho con amor, para Cherry <span class="heart">♥</span></footer>
+
+</div>
+
+<script>
+document.getElementById('open-gift').addEventListener('click', function () {
+  document.body.classList.remove('locked');
+  document.getElementById('gift-gate').style.display = 'none';
+  // El toque en «Abrir mi regalo» habilita el intento de reproducción con sonido.
+  document.getElementById('song-frame').src =
+    'https://www.youtube-nocookie.com/embed/HW4vCxqC95s?autoplay=1&playsinline=1';
+});
+</script>
+</body></html>
