@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi Cherry ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f4efe6;
+  color: #3b2922;
+  text-align: center;
+}
+
+.portada {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background: #17110f;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.portada-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portada-boton {
+  position: absolute;
+  left: 26%;
+  top: 67.3%;
+  width: 48%;
+  height: 6.2%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 60px;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.portada-boton:focus-visible {
+  outline: 3px solid #fff4dc;
+  outline-offset: 4px;
+}
+
+.corazon {
+  font-size: 65px;
+  animation: latido 1.4s infinite;
+}
+
+@keyframes latido {
+  50% { transform: scale(1.2); }
+}
+
+h1 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.portada p {
+  font-size: 20px;
+}
+
+button {
+  background: white;
+  color: #8e2b24;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 28px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+section {
+  padding: 55px 20px;
+}
+
+h2 {
+  color: #8e2b24;
+  font-size: 30px;
+}
+
+.carta {
+  max-width: 650px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #00000012;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.galeria {
+  max-width: 900px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  background: #d8c6ad;
+}
+
+.final {
+  background: #211713;
+  color: #fff8ed;
+  padding: 55px 20px;
+}
+
+.final h2 {
+  color: white;
+}
+
+@media (max-width: 500px) {
+  h1 { font-size: 38px; }
+  .galeria img { height: 155px; }
+}
+
+.primeras-llamadas {
+  background: #e9e0d3;
+  color: #3b2922;
+  padding: 55px 20px;
+}
+.primeras-llamadas h2 {
+  color: #7f2924;
+}
+.foto-llamadas {
+  max-width: 520px;
+  margin: 25px auto 12px;
+  padding: 10px;
+  background: #fffaf1;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px #24150f22;
+}
+.foto-llamadas img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.pie-foto {
+  font-style: italic;
+  color: #6b5144;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="portada">
+  <img class="portada-imagen" src="portada-cherry.png" alt="Portada romántica para Cherry: una pareja contempla un atardecer, con rosas rojas y una luz en forma de corazón">
+  <button class="portada-boton" onclick="abrirSorpresa()" aria-label="Toca aquí, mi amor para abrir la sorpresa e iniciar la canción"></button>
+</div>
+
+
+
+
+<section class="cancion">
+  <h2>Nuestra canción 🎶</h2>
+  <p>Porque desde que te encontré, todo es más bonito. ❤️</p>
+  <div style="max-width:560px;margin:25px auto;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #00000020;">
+    <iframe
+      id="nuestraCancion"
+      width="100%"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/HW4vCxqC95s?enablejsapi=1&autoplay=0"
+      title="Until I Found You - Stephen Sanchez y Em Beihold"
+      style="display:block;border:0;"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <p><small>Toca reproducir para escuchar la versión dueto.</small></p>
+</section>
+
+
+<section class="primeras-llamadas">
+  <h2>Nuestras primeras llamadas ❤️</h2>
+  <p>Desde aquellas primeras conversaciones, poco a poco fuimos creando algo muy especial.</p>
+  <div class="foto-llamadas">
+    <img src="primeras-llamadas.jpg" alt="Un recuerdo de nuestras primeras llamadas">
+  </div>
+  <p class="pie-foto">Una llamada, mil sonrisas y el comienzo de nuestra historia. ❤️</p>
+</section>
+
+<section>
+  <h2>Nuestros recuerdos 📸</h2>
+  <p>Cada fotografía guarda un pedacito de nuestra historia.</p>
+
+  <div class="galeria">
+    <img src="foto1.jpg" alt="Nuestro recuerdo 1">
+    <img src="foto2.jpg" alt="Nuestro recuerdo 2">
+    <img src="foto3.jpg" alt="Nuestro recuerdo 3">
+    <img src="foto4.jpg" alt="Nuestro recuerdo 4">
+    <img src="foto5.jpg" alt="Nuestro recuerdo 5">
+    <img src="foto6.jpg" alt="Nuestro recuerdo 6">
+    <img src="foto7.jpg" alt="Nuestro recuerdo 7">
+    <img src="foto8.jpg" alt="Nuestro recuerdo 8">
+    <img src="foto9.jpg" alt="Nuestro recuerdo 9">
+    <img src="foto10.jpg" alt="Nuestro recuerdo 10">
+  </div>
+</section>
+
+
+
+
+<section id="carta">
+  <h2>Mi querida Cherry ❤️</h2>
+
+  <div class="carta">
+    <p>Hoy cumplimos nuestro primer año juntos y, aunque podría escribirte mil palabras, siento que ninguna sería suficiente para explicarte lo mucho que te amo.</p>
+
+    <p>Hace un año comenzó una historia que hoy significa muchísimo para mí. Un año de momentos, sonrisas, abrazos, aprendizajes y recuerdos que llevo guardados en mi corazón. Y si hay algo que tengo claro después de todo este tiempo, es que volvería a elegirte a ti, una y mil veces.</p>
+
+    <p>Quiero que sepas que no eres simplemente alguien con quien comparto mis días. Eres esa persona con la que quiero seguir construyendo sueños, enfrentar los días difíciles, celebrar las pequeñas victorias y disfrutar de las cosas sencillas de la vida.</p>
+
+    <p>No prometo que todos los días serán perfectos, pero sí quiero prometerte que mi amor por ti es sincero, que quiero cuidarte, respetarte, escucharte y seguir eligiéndote incluso en los días complicados.</p>
+
+    <p>Gracias por llegar a mi vida, por cada momento que me has regalado y por permitirme ser parte de la tuya.</p>
+
+    <p>Si pudiera regresar al día en que nuestras vidas se encontraron, haría exactamente lo mismo: buscaría tu mano, me acercaría a ti y volvería a comenzar esta historia.</p>
+
+    <p>Porque eres tú, Cherry. Mi persona especial, mi amor y una de las razones más bonitas por las que sonrío.</p>
+
+    <p><strong>Feliz primer aniversario, mi amor.</strong></p>
+
+    <p>Te volvería a elegir mil veces, en esta vida y en todas las que existieran.</p>
+
+    <p>Te amo muchísimo. ❤️</p>
+
+    <p><strong>Con amor,<br>Heiter ❤️</strong></p>
+
+    <p><em>Un año juntos, pero toda una vida por escribir. ❤️</em></p>
+  </div>
+</section>
+
+<div class="final">
+  <div class="corazon">❤️</div>
+  <h2>Mil veces tú, Cherry.</h2>
+  <p>Por nuestro primer año y por todos los que vienen.</p>
+  <p>Te amo. 🌹</p>
+</div>
+
+<script>
+function abrirSorpresa() {
+  const reproductor = document.getElementById('nuestraCancion');
+  if (reproductor) {
+    reproductor.src = 'https://www.youtube-nocookie.com/embed/HW4vCxqC95s?autoplay=1&enablejsapi=1';
+  }
+  document.getElementById('carta').scrollIntoView({behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>
